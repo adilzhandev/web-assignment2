@@ -5,6 +5,11 @@
 
 A simple personal website made with HTML and CSS. All nine images were supplied by the student. No frameworks, JavaScript or build tools are required.
 
+## Published website
+
+- Website: https://adilzhandev.github.io/assignment2-frontend/
+- Repository: https://github.com/adilzhandev/assignment2-frontend
+
 ## Pages
 
 - `index.html` — Task 0: Flexbox navigation; Task 1: three equal-height hobby cards with images, titles, descriptions and button-style links.
