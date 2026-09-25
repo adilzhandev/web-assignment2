@@ -115,3 +115,99 @@ a:focus-visible {
   outline: 3px solid #b45200;
   outline-offset: 4px;
 }
+
+/* Task 2: named Grid areas for the whole page. */
+.grid-page {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 250px minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.grid-page .site-header { grid-area: header; }
+.grid-page .site-footer { grid-area: footer; }
+.layout-sidebar {
+  grid-area: sidebar;
+  padding: 24px 20px;
+  background: #f0f2f5;
+}
+.layout-main {
+  grid-area: main;
+  width: 100%;
+}
+.layout-photo {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  border-radius: 6px;
+}
+
+/* Task 3: a 3-column gallery with equal rows. */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+.gallery figure {
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  scroll-margin-top: 20px;
+}
+.gallery figure:target {
+  outline: 3px solid #254d80;
+}
+.gallery figure > a {
+  position: relative;
+  display: block;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.gallery figcaption {
+  padding: 10px 14px;
+}
+.photo-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 10px;
+  background: #000b;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.gallery a:hover .photo-overlay,
+.gallery a:focus-visible .photo-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .grid-page {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "sidebar" "main" "footer";
+    grid-template-rows: auto auto 1fr auto;
+  }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 500px) {
+  .gallery { grid-template-columns: 1fr; }
+  .card-row { flex-direction: column; }
+}
+
+@media (hover: none) {
+  .photo-overlay { opacity: 1; }
+}

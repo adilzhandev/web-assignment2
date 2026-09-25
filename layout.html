@@ -6,7 +6,7 @@
   <title>Grid Layout | Adilzhan Kuandykov</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="">
+<body class="grid-page">
   <header class="site-header">
     <a class="logo" href="index.html">Adilzhan Kuandykov</a>
     <nav aria-label="Main navigation">
@@ -16,7 +16,22 @@
       <a href="portfolio.html">Portfolio</a>
     </nav>
   </header>
-  <main><h1>Grid Layout</h1><p>Flexbox and CSS Grid</p></main>
+  <!-- Task 2: header, sidebar, main and footer are named grid areas. -->
+  <aside class="layout-sidebar">
+    <h2>About me</h2>
+    <p><strong>Adilzhan Kuandykov</strong><br>Group: SE-2526<br>Age: 19</p>
+    <h2>My hobbies</h2>
+    <ul><li>Programming</li><li>Basketball</li><li>Reading</li><li>Gym</li><li>Chess</li></ul>
+  </aside>
+  <main class="layout-main">
+    <h1>A little about me</h1>
+    <p>I'm Adilzhan Kuandykov. I'm 19 years old and I'm in group SE-2526.</p>
+    <p>My hobbies include programming, basketball, reading, going to the gym and playing chess.</p>
+    <img class="layout-photo" src="images/photo-4.jpg" alt="Looking out over a lake and pine trees" width="960" height="1280">
+    <h2>My frontend assignment</h2>
+    <p>This website contains hobby cards, a page layout, a photo gallery and a portfolio. I use Flexbox and CSS Grid to arrange the content.</p>
+    <a href="gallery.html">Visit my gallery</a>
+  </main>
   <footer class="site-footer">Adilzhan Kuandykov · SE-2526 · Assignment 2</footer>
 </body>
 </html>
