@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Карточки — Assignment 2</title>
+  <title>Flexbox Cards | Adilzhan Kuandykov</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="">
   <header class="site-header">
-    <a class="logo" href="index.html">Assignment 2</a>
-    <nav aria-label="Основная навигация">
-      <a href="index.html" aria-current="page">Карточки</a>
-      <a href="layout.html">Grid-разметка</a>
-      <a href="gallery.html">Галерея</a>
-      <a href="portfolio.html">Портфолио</a>
+    <a class="logo" href="index.html">Adilzhan Kuandykov</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Flexbox Cards</a>
+      <a href="layout.html">Grid Layout</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="portfolio.html">Portfolio</a>
     </nav>
   </header>
   <main>
-    <h1>Карточки</h1>
-    <p>Flexbox и CSS Grid</p>
+    <h1>My hobbies</h1>
+    <p>I'm Adilzhan, a 19-year-old student from group SE-2526. My hobbies are programming, basketball, reading, going to the gym and chess.</p>
+    <!-- Task 1: Flexbox keeps the cards in a row with equal heights. -->
+    <section class="card-row" aria-label="Hobby cards">
+      <article class="card">
+        <img src="images/photo-7.jpg" alt="A basketball going through a hoop" width="1280" height="1280">
+        <div class="card-content">
+          <h2>Basketball</h2>
+          <p>Basketball is one of my hobbies. I enjoy being active and playing sports.</p>
+          <a class="button" href="gallery.html#photo-7">View basketball photo</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/photo-6.jpg" alt="Black and white chess pieces" width="234" height="215">
+        <div class="card-content">
+          <h2>Chess</h2>
+          <p>I enjoy playing chess in my free time.</p>
+          <a class="button" href="gallery.html#photo-6">View chess photo</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/photo-9.jpg" alt="A person using a weight machine at the gym" width="488" height="627">
+        <div class="card-content">
+          <h2>Gym</h2>
+          <p>Going to the gym is another way I like to stay active.</p>
+          <a class="button" href="gallery.html#photo-9">View gym photo</a>
+        </div>
+      </article>
+    </section>
   </main>
-  <footer class="site-footer">Assignment 2 · Frontend Development</footer>
+  <footer class="site-footer">Adilzhan Kuandykov · SE-2526 · Assignment 2</footer>
 </body>
 </html>
