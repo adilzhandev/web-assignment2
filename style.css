@@ -1,4 +1,4 @@
-/* Общие стили и навигация (Task 0). */
+/* Task 0: shared styles and Flexbox navigation. */
 * {
   box-sizing: border-box;
 }
@@ -210,4 +210,34 @@ a:focus-visible {
 
 @media (hover: none) {
   .photo-overlay { opacity: 1; }
+}
+
+/* Task 4: Grid outside, Flexbox inside each project card. */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.projects {
+  display: grid;
+  gap: 20px;
+}
+.portfolio-sidebar {
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+}
+.portfolio-sidebar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 18px;
+}
+@media (max-width: 750px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .photo-overlay { transition: none; }
 }

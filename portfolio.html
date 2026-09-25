@@ -16,7 +16,42 @@
       <a href="portfolio.html" aria-current="page">Portfolio</a>
     </nav>
   </header>
-  <main><h1>Portfolio</h1><p>Flexbox and CSS Grid</p></main>
+  <main class="portfolio-main">
+    <h1>My portfolio</h1>
+    <p>My practice projects for Assignment 2.</p>
+    <!-- Task 4: Grid places projects on the left and information on the right. -->
+    <div class="portfolio-grid">
+      <section class="projects" aria-label="My projects">
+        <article class="card">
+          <div class="card-content">
+            <h2>Hobby cards</h2>
+            <p>A row of three cards with photos, descriptions and links. Flexbox gives the cards equal heights.</p>
+            <a class="button" href="index.html">View cards</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-content">
+            <h2>Personal page layout</h2>
+            <p>A page with a header, a left sidebar, main content and a footer, arranged with named Grid areas.</p>
+            <a class="button" href="layout.html">View layout</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-content">
+            <h2>Photo gallery</h2>
+            <p>A responsive gallery of nine images with equal-width Grid columns and a hover effect.</p>
+            <a class="button" href="gallery.html">View gallery</a>
+          </div>
+        </article>
+      </section>
+      <aside class="portfolio-sidebar">
+        <img src="images/photo-3.jpg" alt="Adilzhan at a running event" width="960" height="1280">
+        <h2>About me</h2>
+        <p><strong>Adilzhan Kuandykov</strong><br>SE-2526 · 19 years old</p>
+        <p>My hobbies are programming, basketball, reading, going to the gym and chess.</p>
+      </aside>
+    </div>
+  </main>
   <footer class="site-footer">Adilzhan Kuandykov · SE-2526 · Assignment 2</footer>
 </body>
 </html>
