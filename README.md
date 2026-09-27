@@ -31,6 +31,8 @@ Then open http://localhost:5173. Use the navigation links to visit all four page
 
 ## Responsive layout
 
+The design uses CSS custom properties for colours, spacing and shadows, so the light palette is defined in one place at the top of `style.css`.
+
 The gallery has three columns on desktop, two below 750px and one below 500px. The page layout and portfolio stack into one column below 750px. Navigation wraps, and the hobby cards stack on small screens.
 
 ## Publish with GitHub Pages
