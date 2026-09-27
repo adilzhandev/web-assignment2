@@ -39,13 +39,3 @@ The gallery has three columns on desktop, two below 750px and one below 500px. T
 
 In the repository settings, select **Pages → Deploy from a branch**, then select the `master` branch and the `/ (root)` folder. Save and wait for deployment to finish.
 
-## Notes for the oral defense
-
-- Flexbox arranges content along one main axis. `justify-content` controls alignment on the main axis; `align-items` controls the cross axis.
-- The navbar uses `display: flex`, `justify-content: space-between`, `align-items: center` and `gap`.
-- Hobby cards use a stretching flex row. Each card is a flex column; `margin-top: auto` pushes the button-style link to the bottom.
-- Grid arranges content in rows and columns. `grid-template-areas` names the regions of the layout page.
-- `repeat(3, minmax(0, 1fr))` creates three equal-width columns that may shrink without overflowing.
-- The portfolio combines Grid for the two main columns with Flexbox inside project cards.
-- Media queries change the layout at smaller screen widths.
-- The buttons navigate, so they use semantic `<a>` elements styled as buttons.
