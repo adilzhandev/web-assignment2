@@ -7,8 +7,8 @@ A simple personal website made with HTML and CSS. All nine images were supplied 
 
 ## Published website
 
-- Website: https://adilzhandev.github.io/assignment2-frontend/
-- Repository: https://github.com/adilzhandev/assignment2-frontend
+- Website: https://adilzhandev.github.io/web-assignment2/
+- Repository: https://github.com/adilzhandev/web-assignment2
 
 ## Pages
 
